@@ -59,7 +59,7 @@ namespace BAI_1._0_ONTAP_CSHARP1_CRUD
         public override void inRaManHinh()
         {
             //base.inRaManHinh();
-
+            Console.WriteLine("ID: {0} Tên: {1} Giá Tiền: {2} Số lượng: {3} Trọng Lượng: {4} NXS: {5}", Id, Ten, GiaTien, SoLuong, trongLuong,nXS);
         }
     }
 }

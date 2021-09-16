@@ -11,7 +11,15 @@ namespace BAI_1._0_ONTAP_CSHARP1_CRUD
          */
         static void Main(string[] args)
         {
-            
+            LaptopService laptopService = new LaptopService();
+            // while (true)
+            // {
+                laptopService.getListLaptops();
+                Console.WriteLine("===============================");
+                laptopService.removeLaptop(2);
+                Console.WriteLine("===============================");
+                laptopService.getListLaptops();
+            // }
         }
     }
 }
