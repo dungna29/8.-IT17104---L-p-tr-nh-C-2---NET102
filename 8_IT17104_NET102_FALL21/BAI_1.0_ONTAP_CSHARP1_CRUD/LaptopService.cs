@@ -37,7 +37,7 @@ namespace BAI_1._0_ONTAP_CSHARP1_CRUD
                 },
                 new Laptop()
                 {
-                    Id = 2,
+                    Id = 3,
                     NXs ="Sony",
                     Ten = "Sony Vaio",
                     GiaTien = 200,
