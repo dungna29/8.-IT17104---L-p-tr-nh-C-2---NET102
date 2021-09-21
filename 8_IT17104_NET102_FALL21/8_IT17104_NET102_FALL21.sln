@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31624.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1.0_ONTAP_CSHARP1_CRUD", "BAI_1.0_ONTAP_CSHARP1_CRUD\BAI_1.0_ONTAP_CSHARP1_CRUD.csproj", "{C0CC3FD5-B554-4D3E-8B5A-174C4E061203}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BAI_1.0_ONTAP_CSHARP1_CRUD", "BAI_1.0_ONTAP_CSHARP1_CRUD\BAI_1.0_ONTAP_CSHARP1_CRUD.csproj", "{C0CC3FD5-B554-4D3E-8B5A-174C4E061203}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAI_1.2_DELEGATE", "BAI_1.2_DELEGATE\BAI_1.2_DELEGATE.csproj", "{D874C090-E052-43F4-8B36-B0EAA159EC56}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{C0CC3FD5-B554-4D3E-8B5A-174C4E061203}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0CC3FD5-B554-4D3E-8B5A-174C4E061203}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0CC3FD5-B554-4D3E-8B5A-174C4E061203}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D874C090-E052-43F4-8B36-B0EAA159EC56}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D874C090-E052-43F4-8B36-B0EAA159EC56}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D874C090-E052-43F4-8B36-B0EAA159EC56}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D874C090-E052-43F4-8B36-B0EAA159EC56}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

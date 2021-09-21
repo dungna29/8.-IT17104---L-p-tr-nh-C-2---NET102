@@ -18,6 +18,7 @@ namespace BAI_1._0_ONTAP_CSHARP1_CRUD
             while (true)
             {
                 Console.WriteLine("Quản lý laptop");
+                Console.WriteLine("Quản lý PC");
                 Console.WriteLine("1. Thêm");
                 Console.WriteLine("2. Sửa");
                 Console.WriteLine("3. Xóa");
