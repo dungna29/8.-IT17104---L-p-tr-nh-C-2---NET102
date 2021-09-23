@@ -54,6 +54,50 @@ namespace BAI_1._2_DELEGATE
             ThongBao thongbao2 = new ThongBao(ThongTin1);
             thongbao2("Bạn đang học phần khởi tạo delegate");
             #endregion
+
+            #region Phần 3: Multicast Delegates
+            /*
+               ❖Có thể tham chiếu đến nhiều phương thức tại cùng một thời điểm
+               ❖Kiểu tra về của multicast delegate phải là kiểu void
+               ❖Dùng toán tử “+” để thêm phương thức vào delegate
+            */
+            Console.WriteLine("===Phần 3: Multicast Delegates===");
+            ThongBao thongbao3 = new ThongBao(ThongTin1);
+            ThongBao thongbao4 = new ThongBao(ThongTin2);
+            ThongBao multicastThongBao = thongbao3 + thongbao4;
+            multicastThongBao -= thongbao3;// multicastThongBao - multicastThongBao
+            multicastThongBao += thongbao3;
+            multicastThongBao("Thông báo đây là Multicast");
+
+            #endregion
+
+            #region Phần 4: Delegate Callback
+            Console.WriteLine("===Phần 4: Delegate Callback===");
+            DelegateCallback delegateCallback = new DelegateCallback(ThongTin3);
+         
+            CallBack(delegateCallback);
+
+            #endregion
         }
+        #region Phần 4: Delegate Callback
+
+        public delegate void DelegateCallback(string noidung);
+        static void ThongTin3(string s)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("ThongTin 3+ " + s);
+            Console.ResetColor();
+        }
+
+        static void CallBack(DelegateCallback delegateCallback)
+        {
+            Console.WriteLine("Mời bạn nhập thông báo: ");
+            string temp = Console.ReadLine();
+            ///delegateCallback(temp);
+            ThongTin3(temp);
+        }
+
+
+        #endregion
     }
 }
