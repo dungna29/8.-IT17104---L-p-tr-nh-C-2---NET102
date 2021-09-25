@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "BAI_1.4_DELEGATE_EVENT/1.0.0": {
+        "runtime": {
+          "BAI_1.4_DELEGATE_EVENT.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BAI_1.4_DELEGATE_EVENT/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

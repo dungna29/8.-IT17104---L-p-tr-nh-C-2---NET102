@@ -41,7 +41,7 @@ namespace BAI_1._0_ONTAP_CSHARP1_CRUD
             //base: Tham chiếu đến thuộc tính và phương thức của lớp cha
         }
 
-        //Phần 3: Triển khai property của đối tượng
+        //Phần 3: Triển khai property của đối tượng prop + tab
         public double TrongLuong
         {
             get => trongLuong;
