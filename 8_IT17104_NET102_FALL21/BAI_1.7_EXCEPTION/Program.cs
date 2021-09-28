@@ -55,6 +55,13 @@ namespace BAI_1._7_EXCEPTION
             }
             catch (DivideByZeroException e)
             {
+                /*
+                * 1. Trong chương trình khi phát sinh 1 lỗi xảy ra thì sẽ phát sinh đối tượng Exception hoặc lớp kế thừa từ lớp này. Lớp này giúp hiển thị các thông tin về lỗi giúp xử lý các bước tiếp theo.
+                   - e.Message : Thông tin về lỗi
+                   - e.StackTrace: Truy vết của lỗi nằm ở đâu
+                   - e.GetType().Name: Thông tin lỗi của lớp nào
+                   ..... Hãy khám phá thêm trong quá trình học
+                */
                 Console.WriteLine("Các lỗi xảy ra ");
                 Console.WriteLine(e.Message);
                 Console.WriteLine(e.StackTrace);
@@ -70,5 +77,6 @@ namespace BAI_1._7_EXCEPTION
             Console.OutputEncoding = Encoding.GetEncoding("UTF-8");
             Vidu2();
         }
+       
     }
 }
