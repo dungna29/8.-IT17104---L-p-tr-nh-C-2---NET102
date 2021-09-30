@@ -20,6 +20,7 @@ namespace BAI_TAP_LAB_34
                    b.	Student.Class (Bao gồm các thuộc tính của đối tượng như: MaSV,  DiemCsharp- kế thừa hàm inRaManHinh() từ lớp cha)
                    c.	StudentService.Class(Bao gồm các chức năng của bài toán)
 
+            //Muốn đạt tối đa 10 điểm thì hãy thử ứng dụng 1 Delegate mà đã học.
         */
         static void Main(string[] args)
         {

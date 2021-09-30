@@ -69,13 +69,40 @@ namespace BAI_1._7_EXCEPTION
             }
             Console.WriteLine("Kế thúc chương trình");
         }
+        //Ví dụ 3: Sử dụng Finally
+        public static void Vidu3()
+        {
+            int a = 5, b = 0, c;
+            try
+            {
+                c = a / b;
+                Console.WriteLine(c);
+            }
+            catch (DivideByZeroException e)
+            {
+                //Thực hiện 1 hành đố nếu lỗi
+            }
+            catch (AccessViolationException e)
+            {
+                //Thực hiện 1 hành đố nếu lỗi
+            }
+            catch (Exception e)
+            {
+                //Thực hiện 1 hành đố nếu lỗi
+            }
+            finally
+            {
+                Console.WriteLine("finally");
+            }
+            Console.WriteLine("Kế thúc chương trình");
+        }
 
 
         #endregion
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.GetEncoding("UTF-8");
-            Vidu2();
+            Vidu3();
         }
        
     }
