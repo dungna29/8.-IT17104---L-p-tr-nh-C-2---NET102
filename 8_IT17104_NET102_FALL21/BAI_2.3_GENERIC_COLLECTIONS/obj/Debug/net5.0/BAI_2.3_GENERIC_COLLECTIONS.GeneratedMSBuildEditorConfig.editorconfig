@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net5.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.PublishSingleFile = 
+build_property.IncludeAllContentForSelfExtract = 
+build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
+build_property.RootNamespace = BAI_2._3_GENERIC_COLLECTIONS
+build_property.ProjectDir = E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_2.3_GENERIC_COLLECTIONS\
