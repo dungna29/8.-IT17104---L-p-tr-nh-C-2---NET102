@@ -70,18 +70,18 @@ namespace BAI_2._8_THAO_TAC_VOI_TAP_TIN_System.IO
         static void DirectoryInfo1()
         {
             //DirectoryInfo chứa một tập hợp các phương thức để tạo, xóa, di chuyển và liệt kê trên các thư mục và thư mục con.
-            DirectoryInfo di = new DirectoryInfo(@"D:\");
-
-            Console.WriteLine("*******Direcotry Informations*******\n\n");
-            Console.WriteLine("Full Name={0}", di.FullName);
-            Console.WriteLine("Root={0}", di.Root);
-            Console.WriteLine("Attributes={0}", di.Attributes);
-            Console.WriteLine("Creation Time={0}", di.CreationTime);
-            Console.WriteLine("Name={0}", di.Name);
-            Console.WriteLine("Parent={0}", di.Parent);
+            // DirectoryInfo di = new DirectoryInfo(@"F:\");
+            //
+            // Console.WriteLine("*******Direcotry Informations*******\n\n");
+            // Console.WriteLine("Full Name={0}", di.FullName);
+            // Console.WriteLine("Root={0}", di.Root);
+            // Console.WriteLine("Attributes={0}", di.Attributes);
+            // Console.WriteLine("Creation Time={0}", di.CreationTime);
+            // Console.WriteLine("Name={0}", di.Name);
+            // Console.WriteLine("Parent={0}", di.Parent);
 
             //Create
-            // DirectoryInfo di = new DirectoryInfo(@"D:\temp\xyz");
+            // DirectoryInfo di = new DirectoryInfo(@"C:\fpoly\xyz");
             // di.Create();
 
             //DirectoryInfo di=new DirectoryInfo(@"D:\");  
@@ -92,25 +92,25 @@ namespace BAI_2._8_THAO_TAC_VOI_TAP_TIN_System.IO
         static void DirectoryInfo2()
         {
             //Create
-            // DirectoryInfo di = new DirectoryInfo(@"D:\temp\xyz");
+            // DirectoryInfo di = new DirectoryInfo(@"C:\fpoly2021\xyz");
             // di.Create();
 
             //CreateSubdirectory
-            //DirectoryInfo di=new DirectoryInfo(@"D:\");  
-            //di.CreateSubdirectory("ajay");
-            //di.CreateSubdirectory(@"ajay\ajay11");
+            // DirectoryInfo di=new DirectoryInfo(@"C:\fpoly2021");  
+            // di.CreateSubdirectory("fpoly2021");
+            // di.CreateSubdirectory(@"fpoly2021\ajay11");
 
             //Delete
-            // DirectoryInfo di = new DirectoryInfo(@"d:\abc");
-            // Console.WriteLine("Name:{0}", di.FullName);
-            //
-            // Console.Write("Are you sure to Delete:");
-            // string str = Console.ReadLine();
-            // if (str == "y")
-            // {
-            //     Directory.Delete(@"d:\abc", true);
-            // }
-            // Console.Write("Deleted.....");
+            DirectoryInfo di = new DirectoryInfo(@"C:\fpoly2021");
+            Console.WriteLine("Name:{0}", di.FullName);
+            
+            Console.Write("Are you sure to Delete:");
+            string str = Console.ReadLine();
+            if (str == "y")
+            {
+                Directory.Delete(@"C:\fpoly2021", true);
+            }
+            Console.Write("Deleted.....");
         }
 
         #endregion
@@ -119,7 +119,7 @@ namespace BAI_2._8_THAO_TAC_VOI_TAP_TIN_System.IO
 
         static void FileReadWriteAllText()
         {
-            string path = @"F:\Google Driver Dungna29FPT\8. Demo\Demo C#2\SM21_Block1\7.-IT16312-L-p-tr-nh-C-2-NET102-P207_Lab\7_IT16312_NET102\BAI_2.7_THAO_TAC_VOI_TAP_TIN_System.IO\Text1.txt";
+            string path = @"C:\Csharp2\dungna.txt";
             Console.WriteLine(File.ReadAllText(path));
 
             string temp = "Hoc C# vui khong?";
@@ -230,7 +230,7 @@ namespace BAI_2._8_THAO_TAC_VOI_TAP_TIN_System.IO
         #endregion
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            FileReadWriteAllText();
         }
     }
 }

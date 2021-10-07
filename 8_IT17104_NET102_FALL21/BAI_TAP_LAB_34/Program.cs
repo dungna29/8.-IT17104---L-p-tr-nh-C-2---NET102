@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace BAI_TAP_LAB_34
 {
@@ -24,7 +26,7 @@ namespace BAI_TAP_LAB_34
         */
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            
         }
     }
 }
