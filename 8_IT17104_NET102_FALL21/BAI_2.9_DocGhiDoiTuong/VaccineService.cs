@@ -26,7 +26,7 @@ namespace BAI_2._9_DocGhiDoiTuong
             _bf.Serialize(_fs, lstVaccines);//Serialize Tuần tự hóa hoặc tuần tự hóa là quá trình dịch cấu trúc dữ liệu hoặc trạng thái đối tượng sang định dạng có thể được lưu trữ hoặc truyền và tái tạo lại sau này.
             _fs.Close();
         }
-
+        
         public void docFile(string path)
         {
             _fs = new FileStream(path, FileMode.Open);
@@ -36,7 +36,16 @@ namespace BAI_2._9_DocGhiDoiTuong
             _lstVaccines =(List<Vaccine>) data;//Gán lại list Object cho List Vaccine
             _fs.Close();
         }
-
+        public List<Vaccine> docFile1(string path)
+        {
+            _fs = new FileStream(path, FileMode.Open);
+            _bf = new BinaryFormatter();//Khởi tạo
+            var data = _bf.Deserialize(_fs);//Đọc đối tượng lên
+            _lstVaccines = new List<Vaccine>();
+            _lstVaccines = (List<Vaccine>)data;//Gán lại list Object cho List Vaccine
+            _fs.Close();
+            return _lstVaccines;
+        }
         public List<Vaccine> GetLstVaccines()
         {
             return _lstVaccines;
