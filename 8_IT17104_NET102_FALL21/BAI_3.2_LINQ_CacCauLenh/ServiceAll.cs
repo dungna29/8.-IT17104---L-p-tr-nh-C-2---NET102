@@ -12,7 +12,7 @@ namespace BAI_3._2_LINQ_CacCauLenh
         {
             return new List<NhanVien>
             {
-                new NhanVien{Id = 1,MaNV = "Dungna1",TenNV = "Dũng",Email = "dungna29@gmail.com",Sdt = "0912345678",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
+                new NhanVien{Id = 1,MaNV = "Dungna29",TenNV = "Dũng",Email = "dungna29@gmail.com",Sdt = "0912345678",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 2,MaNV = "MinhDq",TenNV = "Minh",Email = "minhdq@gmail.com",Sdt = "0865791529",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 3,MaNV = "Tiennh",TenNV = "Tiến",Email = "tiennh@gmail.com",Sdt = "0982666611",DiaChi = null,ThanhPho = "ST",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 4,MaNV = "Dungna2",TenNV = "Dũng",Email = "dungna28@gmail.com",Sdt = "09811111111",DiaChi = null,ThanhPho = "HCM",QueQuan = "HN",TrangThai = true},
