@@ -24,7 +24,7 @@ namespace BAI_3._2_LINQ_CacCauLenh
             //Gọi các ví dụ về lý thuyết lên để chạy
             Console.OutputEncoding = Encoding.GetEncoding("UTF-8");
             Program program = new Program();//Khi khởi tạo thì các List trên sẽ có giá trị
-            LINQ_ALL_ANY();
+            LINQ_Distinct();
         }
 
         #region 1. Where điều kiện lọc
@@ -280,7 +280,7 @@ namespace BAI_3._2_LINQ_CacCauLenh
 
         #endregion
 
-        #region ALL/ANY
+        #region 7. ALL/ANY
 
         static void LINQ_ALL_ANY()
         {
@@ -308,7 +308,141 @@ namespace BAI_3._2_LINQ_CacCauLenh
             }
             Console.WriteLine("Contains obj = " + temp3);
         }
-        
+
+
+        #endregion
+
+        #region 8. Hàm Tổng Hợp Arrgreation - SUM - MIN - MAX - COUNT - AVERAGE
+
+        static void LINQ_HAMTONGHOP()
+        {
+            //Đếm số lượng nhân viên đang ở HN
+            var soLuongNVHN = _lstNhanViens.Count(c => c.ThanhPho == "HN");
+
+            //Tính giá trung bình các máy bán ra ở cửa hàng
+            var giaTB = _lsSanPhams.Average(c => c.GiaBan);
+
+            //Tìm ra sản phẩm có giá bán lớn nhất ở cửa hàng
+            var spMAX = _lsSanPhams.Max(c => c.GiaBan);
+           
+        }
+
+        #endregion
+
+        #region 9. Firt và FirtOrDefault (Ngoài ra tìm hiểu thêm Last, LastOrDefault, ElementAt,ElementAtOrDefault, Single, SingleOrDefault)
+
+        static void LINQ_FirtOrDefault()
+        {
+            //Chỉ trả ra 1 giá trị đầu tiên của 1 tập giá trị
+            //First: Trả về phần tử đầu tiền của tập giá trị mà thỏa mãn điều kiện
+            //FirstOrrDefault Trả về phần tử đầu tiền của tập giá trị mà thỏa mãn điều kiện còn không thì sẽ trả về mặc định là null.
+            SanPham sp = new SanPham();
+            // sp = _lsSanPhams.Where(c=>c.Id == 11).FirstOrDefault();
+            // var temp2 = _lsSanPhams.Where(c => c.Id == 10).First();
+            // sp.InRaManHinh();
+            // temp2.InRaManHinh();
+
+            List<int> lst = new List<int>() {2, 4,5,7, 6};
+            Console.WriteLine(lst.FirstOrDefault(c => c % 2 != 0));// = 0
+            Console.WriteLine(lst.First(c=>c % 2 !=0));// = Lỗi
+
+            Console.WriteLine(lst.LastOrDefault(c=>c % 2 !=0));//=7
+
+            List<int> lst1 = new List<int>() { 2, 4, 5,6 };
+            Console.WriteLine(lst1.SingleOrDefault(c=>c % 2 !=0));//= 5 Những nếu xuất hiện nhiều hơn 1 số lẻ sẽ chết
+
+
+            //Console.WriteLine(lst.ElementAt(11));//Chết vì nằm ngoài index
+            Console.WriteLine(lst.ElementAtOrDefault(11));//Sẽ lấy ra giá trị mặc định 0
+        }
+        #endregion
+
+        #region 10. Concat
+
+        static void LINQ_CONCAT()
+        {
+            /*
+             * Concat dùng để nối 2 chuỗi và trả về 1 tập hợp chuỗi mới
+             */
+            List<string> lstName1 = new List<string>() {"DŨNG", "NHUNG"};
+            List<string> lstName2 = new List<string>() {"HÙNG", "HOÀNG"};
+            
+            var lsttemp = lstName1.Concat(lstName2);
+            foreach (var x in lsttemp)
+            {
+                Console.WriteLine(x);
+            }
+
+            //Concat 1 List đối tượng
+            List<SanPham> lstSP1 = new List<SanPham>
+            {
+                new SanPham
+                {
+                    Id = 111, MaSP = "SP1", TenSP = "Iphone 1", MauSac = "Đen", TrongLuong = 900.5, KickThuoc = 5,
+                    GiaNhap = 7000000, GiaBan = 14000000, NgayTao = new DateTime(2021, 12, 5), TrangThai = true,
+                    MoTa = null, IdTheLoai = 1, IdNhanVien = 1
+                },
+                new SanPham
+                {
+                    Id = 111, MaSP = "SP1", TenSP = "Iphone 1", MauSac = "Đen", TrongLuong = 900.5, KickThuoc = 5,
+                    GiaNhap = 7000000, GiaBan = 14000000, NgayTao = new DateTime(2021, 12, 5), TrangThai = true,
+                    MoTa = null, IdTheLoai = 1, IdNhanVien = 1
+                },
+            };
+            foreach (var x in _lsSanPhams.Concat(lstSP1))
+            {
+                x.InRaManHinh();
+            }
+            var lstID = _lsSanPhams.Select(c => c.Id).Concat(lstSP1.Select(c => c.Id));
+        }
+        #endregion
+
+        #region Distinct - Trả về 1 tập giá trị không lặp
+
+        static void LINQ_Distinct()
+        {
+            List<string> lstString = new List<string>() {"A", "A", "A", "B", "B", "C", "D"};
+            foreach (var x in lstString.Distinct())
+            {
+                Console.WriteLine(x);//=A,B,C,D
+            }
+
+            foreach (var x in _lstNhanViens.Distinct(new NhanVien()))
+            {
+                x.InRaManHinh();
+            }
+
+            // Except
+            List<SanPham> lstSP1 = new List<SanPham>
+            {
+                new SanPham
+                {
+                    Id = 111, MaSP = "SP1", TenSP = "Iphone 1", MauSac = "Đen", TrongLuong = 900.5, KickThuoc = 5,
+                    GiaNhap = 7000000, GiaBan = 14000000, NgayTao = new DateTime(2021, 12, 5), TrangThai = true,
+                    MoTa = null, IdTheLoai = 1, IdNhanVien = 1
+                },
+                new SanPham
+                {
+                    Id = 111, MaSP = "SP1", TenSP = "Iphone 1", MauSac = "Đen", TrongLuong = 900.5, KickThuoc = 5,
+                    GiaNhap = 7000000, GiaBan = 14000000, NgayTao = new DateTime(2021, 12, 5), TrangThai = true,
+                    MoTa = null, IdTheLoai = 1, IdNhanVien = 1
+                },
+                new SanPham{Id = 2,MaSP = "SP2",TenSP = "Iphone 2",MauSac = "Đỏ",TrongLuong = 1000,KickThuoc = 6,GiaNhap = 8000000,GiaBan = 15000000,NgayTao = new DateTime(2021, 10, 5),TrangThai = true,MoTa = null,IdTheLoai = 1,IdNhanVien = 2},
+            };
+            var lstSPTem = lstSP1.Except(_lsSanPhams);
+            foreach (var x in lstSPTem)
+            {
+                x.InRaManHinh();
+            }
+            Console.WriteLine("==============");
+            List<string> lstString1 = new List<string>() { "1", "2", "3", "4"};
+            List<string> lstString2 = new List<string>() { "4", "5", "6", "7"};
+            foreach (var x in lstString1.Except(lstString2))
+            {
+                Console.WriteLine(x);
+            }
+        }
+
 
         #endregion
     }

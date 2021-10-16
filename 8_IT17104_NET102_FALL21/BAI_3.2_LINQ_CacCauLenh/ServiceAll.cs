@@ -13,6 +13,7 @@ namespace BAI_3._2_LINQ_CacCauLenh
             return new List<NhanVien>
             {
                 new NhanVien{Id = 1,MaNV = "Dungna29",TenNV = "Dũng",Email = "dungna29@gmail.com",Sdt = "0912345678",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
+                new NhanVien{Id = 1,MaNV = "Dungna29",TenNV = "Dũng",Email = "dungna29@gmail.com",Sdt = "0912345678",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 2,MaNV = "MinhDq",TenNV = "Minh",Email = "minhdq@gmail.com",Sdt = "0865791529",DiaChi = null,ThanhPho = "HN",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 3,MaNV = "Tiennh",TenNV = "Tiến",Email = "tiennh@gmail.com",Sdt = "0982666611",DiaChi = null,ThanhPho = "ST",QueQuan = "HN",TrangThai = true},
                 new NhanVien{Id = 4,MaNV = "Dungna2",TenNV = "Dũng",Email = "dungna28@gmail.com",Sdt = "09811111111",DiaChi = null,ThanhPho = "HCM",QueQuan = "HN",TrangThai = true},
@@ -32,7 +33,7 @@ namespace BAI_3._2_LINQ_CacCauLenh
                 new SanPham{Id = 8,MaSP = "SP8",TenSP = "Iphone 8",MauSac = "Đen",TrongLuong = 800,KickThuoc = 8,GiaNhap = 9000000,GiaBan = 18000000,NgayTao = new DateTime(2021, 10, 5),TrangThai = false,MoTa = null,IdTheLoai = 1,IdNhanVien = 3},
                 new SanPham{Id = 9,MaSP = "SP9",TenSP = "Iphone 9",MauSac = "Trắng",TrongLuong = 800,KickThuoc = 9,GiaNhap = 13000000,GiaBan = 23000000,NgayTao = new DateTime(2021, 1, 5),TrangThai = true,MoTa = null,IdTheLoai = 2,IdNhanVien = 4},
                 new SanPham{Id = 10,MaSP = "SP10",TenSP = "Iphone 10",MauSac = "Càng",TrongLuong = 900,KickThuoc = 12,GiaNhap = 13000000,GiaBan = 24000000,NgayTao = new DateTime(2021, 2, 5),TrangThai = true,MoTa = null,IdTheLoai = 2,IdNhanVien = 1},
-                new SanPham{Id = 10,MaSP = "SP10",TenSP = "Iphone 10",MauSac = "Càng",TrongLuong = 900,KickThuoc = 12,GiaNhap = 13000000,GiaBan = 24000000,NgayTao = new DateTime(2021, 2, 5),TrangThai = true,MoTa = null,IdTheLoai = 2,IdNhanVien = 1}
+                new SanPham{Id = 10,MaSP = "SP10",TenSP = "Iphone 11",MauSac = "Càng",TrongLuong = 900,KickThuoc = 12,GiaNhap = 13000000,GiaBan = 24000000,NgayTao = new DateTime(2021, 2, 5),TrangThai = true,MoTa = null,IdTheLoai = 2,IdNhanVien = 1}
             };
         }
         public List<TheLoai> GetListTheLoais()
