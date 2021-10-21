@@ -1,7 +1,0 @@
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\bin\Debug\BAI_1.2_DELEGATE.exe.config
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\bin\Debug\BAI_1.2_DELEGATE.exe
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\bin\Debug\BAI_1.2_DELEGATE.pdb
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\obj\Debug\BAI_1.2_DELEGATE.csproj.AssemblyReference.cache
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\obj\Debug\BAI_1.2_DELEGATE.csproj.CoreCompileInputs.cache
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\obj\Debug\BAI_1.2_DELEGATE.exe
-E:\Dungna29 Fpoly\8. Demo\Demo C#2\FALL21_Block1\8.-IT17104---L-p-tr-nh-C-2---NET102\8_IT17104_NET102_FALL21\BAI_1.2_DELEGATE\obj\Debug\BAI_1.2_DELEGATE.pdb

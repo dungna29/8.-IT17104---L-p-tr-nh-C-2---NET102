@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CHUA_DE_THI_THU/1.0.0": {
+        "runtime": {
+          "CHUA_DE_THI_THU.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CHUA_DE_THI_THU/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
